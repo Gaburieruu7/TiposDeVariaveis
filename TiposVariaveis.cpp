@@ -9,8 +9,28 @@ int main()
 	double Numero3 = 45345.904555;
 	char Caractere = '3';
 	char Caractere2 = 'k';
+	bool bAchou;
+
+	//um é true (verdadeiro)
+	bAchou = 1;
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+	//zero é falso
+	bAchou = 0;
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+	bAchou = true;
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+	bAchou = false;
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+
+	//Qualquer coisa diferente de zero vira true ao ser atribuído a uma variável do tipo bool
+	bAchou = 'd';
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+	bAchou = "1023460A";
+	std::cout << "Valor de bAchou: " << bAchou << "\n";
+
 	Numero = 45;
 	Numero2 = 55.56f;
+
 	std::cout << "Valor Numero: " << Numero << std::endl;
 	std::cout << "Tamanho da Variavel Numero: " << sizeof(Numero) << " Bytes" "\n";
 	std::cout << "Endereco Carregado na Memoria: " << &Numero << "\n";
